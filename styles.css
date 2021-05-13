@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+
+ul{
+    list-style-type: none;
+    font-size: 20px;
+}
+.center
+    {
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+
+.productImg
+{
+    text-align: center;
+}
+.hero
+{
+    background: url('imgs/background.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mainDiv{
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar
+{
+    font-size: 20px;
+
+    color:#fff;
+    font-weight: 700;
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+flex :2;   
+}
+.productTxt{
+    text-align: center;
+    color: white;
+}
+
+.laptop-img
+{
+    width:100%;
+}
+.tryNow
+{
+    width:140px;
+    height:55px;
+    background-color: #E95959;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.tryNow:hover
+{
+    background-color: #bd4949;
+
+}
+.navBar
+{
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 2rem;
+    height: 100vh;
+    width:100vw;
+    left:100%;
+    background-color: rgba(56,156,56,1);
+    display: flex;  
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    gap:1rem;
+    display: none;
+    top:0;
+    
+    
+}
+
+.ham
+{
+    color: white;
+    cursor: pointer;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+@media only screen and (min-width: 900px) {
+
+    h1{
+        font-size: 50px;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: 20px;
+    }
+    .hero
+    {
+        justify-content: center;
+        align-items: center;
+        padding: 0 4rem;
+        height: 80vh;
+    }
+    .container
+    {
+        height:100%;
+        max-width: 1600px;
+    }
+    .center
+    {
+        height:80%;
+        display: flex;
+        
+    }
+    .register{
+        position: absolute !important;
+
+        display: block !important;
+        bottom:100px !important;
+        right:0px !important;
+        background-color: #fff !important;
+        padding:40px;
+        box-shadow: -8px 10px 26px -17px rgba(0,0,0,0.75);
+
+        
+    }
+    header
+    {
+        justify-content: space-between;
+        padding:10px;
+    }
+    .navBar
+{
+
+    flex-direction: row;
+    position: relative;
+    opacity: 1;
+    position: relative;
+    text-align: center;
+    line-height: 2rem;
+    background-color: transparent;
+
+    width:auto;
+    height:auto;
+    left:0;
+    gap:1rem;
+    top:0;
+    display: flex;
+    transform :translateY(0)!important;
+
+}
+.productTxt
+{
+    text-align: left;
+    flex:3;
+}
+.productImg
+{
+    text-align: left;
+    flex:3;
+}
+ul{
+    display:flex;
+}
+li{
+    margin:10px;
+}
+.close{
+    display: none;
+}
+
+.ham{
+    display: none;
+}
+
+
+.mainDiv{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding:3rem;
+}
+  }
+
+
+
+  .input
+  {
+      background:transparent;
+      outline: none;
+      border:0;
+      border-bottom: 2px solid grey;
+      padding: 0 0 10px 0;
+      font-size: 1.2rem;
+      display: block;
+      margin:5px;
+  }
+
+
+  .register
+  {
+      position: relative;
+      bottom:100px;
+      right:0px;
+      background-color: #fff;
+      padding:40px;
+      box-shadow: -8px 10px 26px -17px rgba(0,0,0,0.75);
+  }
+
+
+  .trialBtn
+  {
+      width:100%;
+  }
+
+
+
+
+
+
+
+
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+    align-items: center;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin:auto;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.de:before {
+    background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+
+.en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+
+.ar:before {
+    background-image: url(https://www.countryflags.io/ae/flat/32.png);
+}
+
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+
